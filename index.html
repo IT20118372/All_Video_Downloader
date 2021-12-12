@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+
+
+  <title>Youtube Videos Downloader - Kaushalya</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/938d7bb336.js" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="css/css.css">
+	
+	
+	<style>
+	
+	hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 3px;
+} 
+	</style>
+</head>
+<body class="">
+<div class="wrapper">
+
+    <div class="container">
+	
+      <div class="card-header header112">
+	  <center>
+        <h4><u>Youtube Video Downloader</u> </h4>
+		<center><h6><div class="onoffswitch3" >
+    <label class="onoffswitch3-label" for="myonoffswitch3">
+        <span class="onoffswitch3-inner">
+            <span class="onoffswitch3-active">
+                <marquee class="scroll-text" >
+				<basefont face = "arial, verdana, sans-serif" size = "2" color = "#ff0000">Created by: Kaushalya M.K.B. || 
+	 All Rights Reserved !</h6>  </marquee>
+                </span>
+            
+        </span>
+    </label>
+</div>
+	</center>
+		</center>
+      </div>
+	  <br>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="text-weight"><b>Youtube Video Link: <i class="fas fa-link"></i></b></label>
+              <input type="txt" name="link" class="form-control link" placeholder="Paste the video link"required>
+            </div>
+          </div>
+        </div>
+		<br>
+		<br>
+        <form class="form-download">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="text-weight"><b>Select Video Fromat:   <i class="fas fa-sort-down"></i></b></label>
+                <select class="form-control formte" required>
+                  <option selected disabled>Select Video Format  </option>
+                  <option value="mp3">Mp3</option>
+                  <option value="mp4a">144 Mp4</option>
+                  <option value="360">360 Mp4</option>
+                  <option value="480">480 Mp4</option>
+                  <option value="720">720 Mp4</option>
+                  <option value="1080">1080 Mp4</option>
+                  <option value="4k">4k Mp4</option>
+                  <option value="8k">8k Mp4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group mt-4 download-video">
+                <button class="btn btn-success btn-block click-btn-down tm-view-more-btn" type="submit" >Click Me To Download  <i class="fas fa-download"></i></button>
+              </div>
+            </div>
+          </div>
+		 
+		  <hr>
+        </form> 
+      </div>
+	  	<div class="dual-btn-container">
+  <a class="dual-color-btn shine-hope-anim" href="other.html">See My Other Works</a>
+</div>
+	<div><center>
+	<h3>How To Use <i class="fas fa-arrow-down"></i></h3>
+	<video width="300" controls>
+  <source src="guide.mp4" type="video/mp4">
+  <source src="guide.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video></center>
+
+	</div>
+  
+		<div class="blink blink-two">
+		  <h6> <b>After Clicking The Download Button, Please Stay Focus With The Main Page (This Page).</b></h6>
+		  </div></div><br>
+  </div>
+ </div>
+  </div>
+
+</body>
+<script type="text/javascript">
+  $(".click-btn-down").click(function(){
+      var link = $(".link").val();
+    var fromate = $(".formte").children("option:selected").val();
+    var src =""+link+"="+fromate+"";
+    downloadVideo(link,fromate);
+  });
+  function downloadVideo(link,fromate) {
+      $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden; border-radius:25px;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
+  }
+</script>
+</html>
