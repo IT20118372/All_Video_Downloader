@@ -1,8 +1,6 @@
 # All Videos Downloader - Support for every public videos (Youtube, Facebook, Instergram, etc.)
 
-👨🏻‍💻 This Video Downloader is a result of my self-projects about downloading and converting videos from Video rsource sites. 
-
-👨🏻‍💻  This tool features basic-level download engine techniques. This is 100% secure & Free.
+*Used languages : HTML, CSS, Js
 
 👨🏻‍💻 This tool can download 8K, 4K, 1080p, 750p, 480p, 360p, 144p public videos from any video resource if they are available.
 
